@@ -14,7 +14,7 @@ if [ $? -ne 0 ]
 then
      echo "installing $packagename now"  
      sudo apt-get update
-     sudo apt-get install $name
+     sudo apt-get install $packagename
 else
      echo "$packagename is already installed"
 fi
