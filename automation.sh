@@ -48,5 +48,5 @@ echo -e "\nhttpd-logs &ensp; ${timestamp} &ensp; tar &ensp; $(stat -c%s "$invent
 #create cronjob if not already
 if [ ! -f /etc/cron.d/automation ]; 
 then
-	sudo echo -e "0 */5 * * * root /root/Automation_Project/automation.sh" >> /etc/cron.d/automation
+	sudo echo -e "0 1 * * * root /root/Automation_Project/automation.sh" >> /etc/cron.d/automation
 fi
